@@ -2,18 +2,17 @@
 
 - [[python]]
 - [[fast-api]]
-- SQLModel (AsyncSession)
-- Flutter / Dart
-- Keycloak
-- uv
+- [[postgreSQL]]
+- [[flutter]]
+- [[keycloak]]
+- [[uv]]
 
 ---
 
 ## Infrastructure
 
 - [[docker]]
-- Docker Compose (Development)
-- Kubernetes (Cluster: frodo)
+- [[kubernetes]]
 
 ---
 

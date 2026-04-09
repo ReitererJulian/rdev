@@ -1,4 +1,10 @@
-Documentation repo for the building process of my Raspberry Pi Server / Kluster
+Documentation repo of my learning process
+
+## Goals
+
+- Learn Server / Client applications 
+- Understand Spring Boot
+- Get to know python
 
 ## TODO:
 
@@ -22,7 +28,11 @@ Documentation repo for the building process of my Raspberry Pi Server / Kluster
 ### Frontend:
 - `frontend/src/main/java/org.zerolift.frontend/ClientConfig.java`
 
+---
+
 ## E3DS
 
-### Tech Stack
+Start learning the basics of python
+
+
 

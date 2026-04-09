@@ -5,6 +5,21 @@
 - Java
 - [[spring-boot]]
 - [[postgreSQL]]
+- Maven
+- JavaFX
+- [[lombok]]
+- [[pasword4j]]
+- [[open-feign]]
+- [[gson]]
+- [[jackson]]
+- JUnit
+- Apache Commons Lang3
+- [[dto]]
+- CSS
+- Logback
+- SLF4J
+- [[git]]
+
 
 ---
 
@@ -17,26 +32,3 @@
 - [[rest-api]]
 
 ---
-
-Tech Stack  
-  
-Maven (multi modul)  
-Spring Boot  
-Postgresql  
-JavaFX  
-Lombok  
-Password4j  
-OpenFeign  
-Gson  
-Jackson  
-Junit  
-Apache Commons Lang3  
-CI/CD  
-Docker  
-DTOs  
-Css  
-Logback  
-SLF4J  
-Git  
-HTTP  
-Rest

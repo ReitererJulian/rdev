@@ -5,7 +5,7 @@ A `dto` or `Data Transfer Object` is a simple Object which only purpose is to tr
 Not much logic, no database.
 
 Your Entity is the internal truth. It mirrors the database and stays internal. The DTO is the external representation. 
-t shows the client exactly what they need to see, nothing more and nothing less.
+It shows the client exactly what they need to see, nothing more and nothing less.
 
 ## Problem without DTO
 

@@ -5,7 +5,6 @@
 - [[postgreSQL]]
 - [[flutter]]
 - [[keycloak]]
-- [[uv]]
 
 ---
 

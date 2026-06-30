@@ -68,6 +68,30 @@ while count < 5:
 	count += 1
 ``` 
 
+### Type Annotations
+
+Type Annotations are used to tell the code editor what type of data you want. 
+This helps you not make mistakes when defining variables
+
+Without Type Annotations:
+```python
+# age should be an int
+age = 10
+
+# age can also be a string
+age = "ten"
+```
+
+With Type Annotations the code editor warns you that you are using the wrong datatype.
+It will not throw an error.
+
+With Type Annotations
+```python
+age: int = 10
+
+# editor highlights as wrong
+age: int = "ten"
+```
 
 ### Functions
 
@@ -75,17 +99,62 @@ Keyword `def`
 No need for a return datatype like in java
 
 ```python
-def greet(name)
+def greet(name):
 	return "Hello " + name
 	
 message = greet("Max")
-print(messgage)
+print(message)
 ``` 
 
 ```python
-def add(a, b)
+def add(a, b):
 	return a + b #Can be int or float
 	
 result = add(5, 10) # result is a int 
 result2 = add("Hi ", "!") # result2 is a string
 ``` 
+
+It is possible to define the datatype the function expects and also what it should return
+
+```python
+# a and b need to be ints
+# adding two ints will return a int 
+def add(a: int, b: int) -> int:
+	return a + b
+	
+print(add(2,2))
+```
+
+If nothing is there to return you can write `-> None:`
+Also default values can be added using `=`
+
+```python
+# Hi is now a default value
+def greet(name: str, greeting: str = "Hi" ) -> None:
+	print(f"{greeting}, {name}!")
+	
+greet("Bob", "Servas") # Servas, Bob!
+greet("Hans") # Hi, Hans
+```
+
+### F-Strings
+
+The F stands for Formatted String.
+It makes printing including variables a lot simpler and easier
+
+Without F-String
+```python
+name: str = "Bob"
+age: int = 10
+
+print("Name:" + name + ", Age:" + age)
+```
+
+With F-String
+
+```python
+name: str = "Bob"
+age: int = 10
+
+print(f"Name: {name}, Age: {age}")
+```

@@ -1,6 +1,6 @@
 # FastAPI
 
-FastAPI is a simple way to build a modern Python REST APIs
+FastAPI is a simple way to build a modern REST APIs in Python
 
 
 ```python
@@ -13,7 +13,6 @@ app = FastAPI()
 def ping():
 	return {"pong"}
 ``` 
-
 
 It also supports a simple version DI (Dependency injection) using `Depends()`
 Using this you can tell FastAPI you need a Database Object and it creates one for you

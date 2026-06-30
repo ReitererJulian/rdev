@@ -28,9 +28,30 @@ is_true = True
 fruits = ["Apple", "Orange"]
 
 # List
-numbers = {1, 2, 3, 4}
+numbers = [1, 2, 3, 4]
 ```
 
+Dictionaries:
+
+```python
+user = {
+    "id": 1,
+    "name": "Max",
+    "active": True
+}
+
+print(user["name"])      # Max
+user["age"] = 25         # add key
+print(user.get("email")) # None instead of error
+```
+
+#### Lists vs Sets vs Dictionary
+
+| *Typ* | *Syntax* | *Duplicates* | *Ordered* |
+|--|--|--|--|
+| List | `[1, 2, 3]` | Yes | Yes |
+|Set | `{1, 2, 3}` | No | No |
+| Dict | `{"key": "value"} | Yes | Yes |
 
 ### If-Else
 
@@ -157,4 +178,60 @@ name: str = "Bob"
 age: int = 10
 
 print(f"Name: {name}, Age: {age}")
+```
+
+### Project Structure
+
+Backend structure
+
+```
+backend/
+├── app/
+│   ├── __init__.py
+│   ├── main.py              # FastAPI() app, include_router(...)
+│   ├── routers/
+│   │   ├── __init__.py
+│   │   └── user_router.py   # @router.get("/users")
+│   ├── services/
+│   │   ├── __init__.py
+│   │   └── user_service.py  # Business-Logik
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── user.py          # Model classes
+│   └── core/
+│       ├── __init__.py
+│       ├── config.py        # reads .env, settings
+│       └── database.py      # DB-Connection
+├── tests/
+│   └── test_users.py
+├── .env.example
+├── .env                      # NOT in Git!
+├── Dockerfile
+├── pyproject.toml
+└── uv.lock
+```
+
+### Classes
+
+Classes in python are similar to classes in java.
+
+```python
+class User:
+	# Attributes
+	name: str
+	age: int
+	
+	# Constructor
+	def __init__(self, name: str, age: int):
+		self.name = name
+		self.age = age
+```
+
+Create a `User` object:
+
+```python
+user = User("Bob", 18)
+
+print(user.name)
+print(user.age)
 ```

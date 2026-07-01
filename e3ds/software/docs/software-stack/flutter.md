@@ -86,12 +86,17 @@ Using this the layout becomes much easier.
 
  For example:
 
-`Collumn` -> `Progress Bar` and `Rows`
+`Collumn` -> `Text` and `Progress Bar`
 `Rows` -> `Checkboxes` and `Tasks`
 
 ### Dart
 
 Dart is the language used to model the application.
 
-To start 
- 
+This code imports the basic widgets and with `void main() => runApp()` we can set the root widget when the app starts.
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() => runApp(); // Root widget will be defined here 
+```

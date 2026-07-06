@@ -1,76 +1,159 @@
-Documentation repo of my learning process
+# Goals
 
-## Goals
+## Portfolio
 
-- Learn Server / Client applications 
-- Understand Spring Boot
-- Get to know python
+- Resume Website
+    - HTML
+    - CSS
+    - Responsive Design
+    - Dark / Light Mode
+    - Contact Form
+    - SEO Basics
+    - Deploy (GitHub Pages / Cloudflare)
+    - Custom Domain
 
-## TODO:
+- Clean GitHub Profile
+    - README
+    - Pinned Projects
+    - Good Documentation
+    - Meaningful Commit Messages
+    - Consistent Project Structure
 
-- Explain Spring Boot in Docs
-- Explain PostgreSQL in Docs
-- Start Printing Base in PLA
+## Backend (Java)
 
-## Understand ZeroLift Code
+- REST API
+    - Spring Boot
+    - CRUD
+    - JWT Authentication
+    - Role-based Authorization
+    - Validation
+    - Global Exception Handling
+    - Logging
+    - Configuration Profiles
+    - Swagger / OpenAPI
+    - Docker Support
 
-### Backend:
-- `backend/kubernetes/zerolift.yaml`
+- Spring
+    - Dependency Injection
+    - Spring Data JPA
+    - Spring Security
+    - Configuration
+    - Scheduling
+    - Caching
 
-### Client:
-- `client/src/main/java/org.zerolift.client/ZeroliftClientHelper.java`
+## Python
 
-### Exercises-Client
-- `exercises-client/src/main/java/org.zerolift.exerciseclient/dto/`
-- `exercises-client/src/main/java/org.zerolift.exerciseclient/ExerciseClient.java`
-- `exercises-client/src/main/java/org.zerolift.exerciseclient/ExerciseClientHelper.java`
+- Automation Scripts
+- Web Scraping
+- File Processing
+- REST API Client
+- CLI Applications
+- Async Programming
+- Data Processing
 
-### Frontend:
-- `frontend/src/main/java/org.zerolift.frontend/ClientConfig.java`
+## Frontend
 
----
+- Flutter
+    - Material Design
+    - Responsive Layout
+    - Navigation
+    - REST Integration
+    - Authentication
+    - Local Storage
+    - State Management (Riverpod/BLoC)
 
-## E3DS
+- HTML / CSS
+    - Flexbox
+    - Grid
+    - Animations
+    - Accessibility
+    - Responsive Design
 
-Start learning the basics of python
+## Database
 
----
+- PostgreSQL
+    - SQL
+    - Joins
+    - Indexes
+    - Views
+    - Transactions
+    - Performance
+    - Backup & Restore
+    - Database Migrations (Flyway)
+
+## DevOps
+
+- Docker
+    - Dockerfiles
+    - Docker Compose
+    - Multi-stage Builds
+
+- Kubernetes Cluster
+    - Second Pi 5
+    - High Availability
+    - Ingress
+    - Persistent Volumes
+    - ConfigMaps
+    - Secrets
+    - Helm
+    - Monitoring
+    - Backups
+
+- GitHub Actions
+    - Build
+    - Test
+    - Docker Build
+    - Automatic Deploy
+
+## Testing
+
+- JUnit
+- Mockito
+- Integration Tests
+- Testcontainers
+- Flutter Widget Tests
+- API Testing (Postman / Bruno)
+- Code Coverage
+
+## Architecture
+
+- Clean Architecture
+- SOLID Principles
+- Design Patterns
+- Layered Architecture
+- Dependency Injection
+
+## Security
+
+- JWT
+- OAuth2 Basics
+- Password Hashing
+- HTTPS
+- OWASP Top 10
+- Secrets Management
 
 ## Linux
 
-### Endeavuor OS
+- Bash
+- SSH
+- Nginx
+- Systemd
+- Networking
+- Cron Jobs
 
-- Light, arch base distro (no bloatware)
-- `yay` and `pacman` -> no installers
+## Git
 
---- 
+- Branching Strategy
+- Pull Requests
+- Code Reviews
+- Merge Conflicts
+- Semantic Versioning
 
-## Calendar
+## Projects
 
-### ZeroLift / PiStack
-
-Time: `7 Weeks`
-
-Road map: [[rdev/pi-stack/software/docs/learning-roadmap|learning-roadmap]]
-
-
-### E3DS
-
-Time: `11 Weeks`
-
-Road map: [[rdev/e3ds/software/docs/learning-roadmap|learning-roadmap]]
-
-
-## Commands
-
-### Scan network:
-
-```bash
-nmap -sn 192.168.31.0/24
-```
-
-### SSH
-
-```bash
-ssh piname@ip
-``` 
+- Resume Website
+- Personal Finance App
+- Spring Boot REST API
+- Flutter Mobile App
+- Python Automation Project
+- Kubernetes Homelab

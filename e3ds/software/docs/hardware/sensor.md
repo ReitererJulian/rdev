@@ -105,8 +105,18 @@ The `Rest API` is as far as I know read only. Settings like `Storage.Control.Sav
 - Namespace 1 is reserved for the server itself
 - Namespace 2 is for custom nodes
 
-NodeID to set if json files will be saved: 
+`Node Path` to set if json files will be saved. Parameter `bool` 
 
 ```
 Storage.Control.SaveMeasurementData
+```
+
+Simple example:
+```python
+url: str = "opc.tcp://ESF00000000fc2f4839:4840"
+client = Client(url)
+client.connect()
+node = client.get_node(f"ns=2;s={"Acceleration.Data.RawData.DataLink"}")  
+return node.get_value()
+client.disconnect()
 ```

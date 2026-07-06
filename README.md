@@ -1,4 +1,95 @@
+# Main Project
+
+The main project for the next days, months or whatever will be a `ToDo-Manager` using a Java `Spring Boot` backend and a Flutter frontend.
+
+The entire app should be hosted on my PiStack first without `Kubernetes` on one machine and after further progression on two `Raspberry Pis`
+
+The goal is to get continuously better and learn and improve in modern software development through adding more things every step of development. 
+
+## Tech Stack
+
+### Backend
+
+- Java
+- Spring Boot
+- Spring Data JPA
+- PostgreSQL
+
+### Frontend
+
+- Flutter
+
+### Infrastructure
+
+- Docker
+- Kubernetes (Pi Stack)
+
+### Testing
+
+- JUnit
+- Mockito
+- Integration Tests
+
+### Other
+
+- Git
+- Python (automation scripts)
+
+## Phase 1 (Prototype)
+
+The first prototype should be very simple. No crazy UI no crazy backend.
+Nothing like accounts or other stuff that can be added in the future. 
+Just a barebones application that runs at least.
+
+Something like one input field for new tasks and one output for all tasks.
+With these endpoints:
+
+### Backend
+
+```
+GET /api/todos
+GET /api/todos/{id}
+POST /api/todos
+PUT /api/todos/{id}
+DELETE /api/todos/{id}
+```
+
+### Database
+
+```
+TodoItem
+
+- id
+- title
+- completed
+```
+
+### Flutter UI
+
+- TextField
+- Add button
+- Task list
+- Checkbox
+- Delete button
+
+# Phase 2 (Backend update)
+
+After finishing the prototype the backend will be expanded and updated to get closer to the final version. 
+
+This will be achieved by adding these things:
+
+- Validation
+- Exception Handling
+- Logging
+- DTOs
+- Better project structure
+- Configuration
+- Environment variables
+
+---
+
 # Goals
+
 
 ## Portfolio
 
@@ -157,3 +248,7 @@
 - Flutter Mobile App
 - Python Automation Project
 - Kubernetes Homelab
+
+
+
+

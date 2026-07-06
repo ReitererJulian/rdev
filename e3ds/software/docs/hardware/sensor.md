@@ -75,7 +75,7 @@ Example:
 http://esf00000000fc2f4839:8700/status
 ```
 
-There is a URL to save the raw data `.json` file:
+There is a URL to save the raw data `.json` file. This URL changes with every new file.
 
 ```
 http://10.30.117.246:8700/cache/50c6e2d8-7259-4da2-adce-74fc7edfc14b-raw.json
@@ -93,3 +93,20 @@ In UA Expert click the `+` Icon to add a Server.
 Under the point `Custom Discovery` double click on `<Double click to Add Server...>`
 Enter the Host after `opc.tcp://`
 Expand this tab twice.
+
+#### OPC UA using Python
+
+The `Rest API` is as far as I know read only. Settings like `Storage.Control.SaveMeasurementData` cant be changed via REST.
+
+`ns=2;i=1` 
+
+`ns=2` -> means namespace 2
+- Namespace 0 is reserved for OPC UA standard nodes
+- Namespace 1 is reserved for the server itself
+- Namespace 2 is for custom nodes
+
+NodeID to set if json files will be saved: 
+
+```
+Storage.Control.SaveMeasurementData
+```

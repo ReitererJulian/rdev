@@ -1,253 +1,93 @@
-# Main Project
 
-The main project for the next days, months or whatever will be a `ToDo-Manager` using a Java `Spring Boot` backend and a Flutter frontend.
+# rdev
 
-The entire app should be hosted on my PiStack first without `Kubernetes` on one machine and after further progression on two `Raspberry Pis`
+## Description
+**rdev** is my personal developer knowledge base — part learning wiki, part system documentation. It's split into two purposes: explaining concepts and tools I'm learning (Python, Java, Spring Boot, Docker, etc.), and documenting the real systems I run (Raspberry Pi Stack, home setup, e3ds).
 
-The goal is to get continuously better and learn and improve in modern software development through adding more things every step of development. 
+[![Markdown](https://img.shields.io/badge/Format-Markdown-000000.svg)](https://www.markdownguide.org/)
+[![Status](https://img.shields.io/badge/Status-Work%20in%20Progress-yellow.svg)]()
 
-## Tech Stack
+## Key Features
+* **Learning Wiki:** Concept and tool notes, organized by topic (languages, frameworks, tools, concepts) — independent of any specific project.
+* **System Documentation:** Real, running setups (Pi Stack, home network, e3ds hardware/software) documented separately, linking back to the wiki for underlying concepts.
+* **Consistent Structure:** Clear separation between "what I'm learning" and "what I actually run", so notes don't get duplicated across projects.
+* **Growing Over Time:** Continuously updated as I learn new tools and expand my home infrastructure.
 
-### Backend
-
-- Java
-- Spring Boot
-- Spring Data JPA
-- PostgreSQL
-
-### Frontend
-
-- Flutter
-
-### Infrastructure
-
-- Docker
-- Kubernetes (Pi Stack)
-
-### Testing
-
-- JUnit
-- Mockito
-- Integration Tests
-
-### Other
-
-- Git
-- Python (automation scripts)
-
-## Phase 1 (Prototype)
-
-The first prototype should be very simple. No crazy UI no crazy backend.
-Nothing like accounts or other stuff that can be added in the future. 
-Just a barebones application that runs at least.
-
-Something like one input field for new tasks and one output for all tasks.
-With these endpoints:
-
-### Backend
-
-```
-GET /api/todos
-GET /api/todos/{id}
-POST /api/todos
-PUT /api/todos/{id}
-DELETE /api/todos/{id}
-```
-
-### Database
-
-```
-TodoItem
-
-- id
-- title
-- completed
-```
-
-### Flutter UI
-
-- TextField
-- Add button
-- Task list
-- Checkbox
-- Delete button
-
-# Phase 2 (Backend update)
-
-After finishing the prototype the backend will be expanded and updated to get closer to the final version. 
-
-This will be achieved by adding these things:
-
-- Validation
-- Exception Handling
-- Logging
-- DTOs
-- Better project structure
-- Configuration
-- Environment variables
+## Structure Philosophy
+* `wiki/` → **concepts & tools**, e.g. "how does Docker work", "what is a DTO" — written once, referenced everywhere.
+* `systems/` → **concrete setups**, e.g. "how the Pi Stack is configured" — short, practical, links to `wiki/` for background instead of re-explaining concepts.
 
 ---
 
-# Goals
+## Table of Contents
+- [Structure](#structure)
+- [Usage](#usage)
+- [Contents Overview](#contents-overview)
+- [Credits](#credits)
 
+## Structure
+```
 
-## Portfolio
+rdev/  
+├── README.md  
+│  
+├── systems/  
+│ ├── e3ds/  
+│ │ ├── README.md  
+│ │ └── hardware/  
+│ │ └── sensor.md  
+│ ├── home-setup/  
+│ │ ├── README.md  
+│ │ └── desk.md  
+│ └── pi-stack/  
+│ ├── README.md  
+│ ├── setup.md  
+│ └── scripts/  
+│ ├── stats.md  
+│ └── stress.md  
+│  
+└── wiki/  
+├── concepts/  
+│ ├── dto.md  
+│ └── rest-api.md  
+├── frameworks/  
+│ ├── fast-api.md  
+│ ├── flutter.md  
+│ └── spring-boot.md  
+├── languages/  
+│ ├── java/  
+│ └── python/  
+│ ├── async-vs-sync.md  
+│ └── python-basics.md  
+└── tools/  
+├── docker.md  
+├── git.md  
+├── kubernetes.md  
+├── postgreSQL.md  
+└── uvicorn.md
 
-- Resume Website
-    - HTML
-    - CSS
-    - Responsive Design
-    - Dark / Light Mode
-    - Contact Form
-    - SEO Basics
-    - Deploy (GitHub Pages / Cloudflare)
-    - Custom Domain
+```
 
-- Clean GitHub Profile
-    - README
-    - Pinned Projects
-    - Good Documentation
-    - Meaningful Commit Messages
-    - Consistent Project Structure
+## Usage
+This repo isn't a runnable project — it's a documentation/notes repository. Browse `wiki/` for concept explanations, or `systems/` for how my actual infrastructure (Pi Stack, home network) is set up and configured.
 
-## Backend (Java)
+## Contents Overview
 
-- REST API
-    - Spring Boot
-    - CRUD
-    - JWT Authentication
-    - Role-based Authorization
-    - Validation
-    - Global Exception Handling
-    - Logging
-    - Configuration Profiles
-    - Swagger / OpenAPI
-    - Docker Support
+**Wiki**
+- **Languages** – Python, Java fundamentals and patterns
+- **Frameworks** – FastAPI, Flutter, Spring Boot
+- **Tools** – Docker, Kubernetes, Git, PostgreSQL, Uvicorn
+- **Concepts** – REST APIs, DTOs
 
-- Spring
-    - Dependency Injection
-    - Spring Data JPA
-    - Spring Security
-    - Configuration
-    - Scheduling
-    - Caching
+**Systems**
+- **Pi Stack** – Raspberry Pi server setup, monitoring scripts, infrastructure notes
+- **Home Setup** – Desk, room, and network layout
+- **e3ds** – Hardware and sensor documentation
 
-## Python
+## Credits
 
-- Automation Scripts
-- Web Scraping
-- File Processing
-- REST API Client
-- CLI Applications
-- Async Programming
-- Data Processing
-
-## Frontend
-
-- Flutter
-    - Material Design
-    - Responsive Layout
-    - Navigation
-    - REST Integration
-    - Authentication
-    - Local Storage
-    - State Management (Riverpod/BLoC)
-
-- HTML / CSS
-    - Flexbox
-    - Grid
-    - Animations
-    - Accessibility
-    - Responsive Design
-
-## Database
-
-- PostgreSQL
-    - SQL
-    - Joins
-    - Indexes
-    - Views
-    - Transactions
-    - Performance
-    - Backup & Restore
-    - Database Migrations (Flyway)
-
-## DevOps
-
-- Docker
-    - Dockerfiles
-    - Docker Compose
-    - Multi-stage Builds
-
-- Kubernetes Cluster
-    - Second Pi 5
-    - High Availability
-    - Ingress
-    - Persistent Volumes
-    - ConfigMaps
-    - Secrets
-    - Helm
-    - Monitoring
-    - Backups
-
-- GitHub Actions
-    - Build
-    - Test
-    - Docker Build
-    - Automatic Deploy
-
-## Testing
-
-- JUnit
-- Mockito
-- Integration Tests
-- Testcontainers
-- Flutter Widget Tests
-- API Testing (Postman / Bruno)
-- Code Coverage
-
-## Architecture
-
-- Clean Architecture
-- SOLID Principles
-- Design Patterns
-- Layered Architecture
-- Dependency Injection
-
-## Security
-
-- JWT
-- OAuth2 Basics
-- Password Hashing
-- HTTPS
-- OWASP Top 10
-- Secrets Management
-
-## Linux
-
-- Bash
-- SSH
-- Nginx
-- Systemd
-- Networking
-- Cron Jobs
-
-## Git
-
-- Branching Strategy
-- Pull Requests
-- Code Reviews
-- Merge Conflicts
-- Semantic Versioning
-
-## Projects
-
-- Resume Website
-- Personal Finance App
-- Spring Boot REST API
-- Flutter Mobile App
-- Python Automation Project
-- Kubernetes Homelab
+**Author:**
+- [Reiterer Julian](https://github.com/ReitererJulian)
 
 
 

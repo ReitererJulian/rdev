@@ -16,7 +16,11 @@ Desk things like keyboards, lights, deco and other stuff
 
 ### Microphone
 
+Two possible options:
 
+- Using XLR Cable and combining it with an AMP for my headphones (More expensive)
+	- []
+- Using it with USB-C and using my headphones without an AMP (Cheaper)
 
 ## PC
 

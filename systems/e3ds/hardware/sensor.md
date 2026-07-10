@@ -120,3 +120,121 @@ node = client.get_node(f"ns=2;s={"Acceleration.Data.RawData.DataLink"}")
 return node.get_value()
 client.disconnect()
 ```
+
+
+# Sensor Setup & Testing Guide
+
+## 1. Connect to the Sensor
+
+- Connect to the sensor using its **IP address** or **hostname**.
+    
+- For Wi-Fi, the network is usually called **EDS-INIT**.
+    
+- Depending on the sensor version, the Wi-Fi name may also be available:
+    
+    - **IFE_Sensors**
+        
+    - **IFE_SENSORS**
+        
+
+---
+
+## 2. Verify Data in Grafana
+
+The final setup step is to ensure that the sensor data appears in **Grafana**.
+
+### Testing Dashboard
+
+In the **Testing Dashboard**, you can:
+
+- Compare multiple sensors.
+    
+- Start a **manual measurement**.
+    
+- Shake the sensor slightly.
+    
+- If new data appears in Grafana after shaking the sensor, the setup is working correctly.
+    
+
+---
+
+## 3. Bluetooth Measurements
+
+- Open **Essence Vibro**.
+    
+- Select the **Bluetooth** symbol.
+    
+- If the connection does not work the first time, try connecting a second time.
+    
+
+---
+
+## 4. Modbus Test Setup
+
+Verify Modbus communication by checking that:
+
+- A command is sent over the cable.
+    
+- The sensor returns the expected response.
+    
+
+---
+
+## 5. Configuration
+
+The current sensor settings can be viewed under:
+
+**Config**
+
+---
+
+## 6. Software Updates via SSH
+
+### New Sensors
+
+```bash
+ssh eds@<IP_ADDRESS>
+```
+
+- password: `inital`
+    
+
+### Older Sensors
+
+```bash
+ssh pi@<IP_ADDRESS>
+```
+
+Become the root user:
+
+```bash
+sudo su
+```
+
+From there, you can install or uninstall updates as required.
+
+### Update Commands
+
+#### Dev Version
+
+Install the dev version (1.0.13)
+This version has the updated clock
+
+```bash
+pip install InvenSense9DOFBuffered==1.0.13.dev0+feat.pllclock127 --index-url "https://poly:REDACTED.01.0y153gksk@git.esenseial.at/api/v4/projects/153/packages/pypi/simple" --break-system-packages
+```
+
+#### Stable
+
+Command to install the older stable version without the updated clock
+
+```bash
+pip install InvenSense9DOFBuffered==1.0.12.dev0+feat.pllclock127 --index-url "https://poly:REDACTED.01.0y153gksk@git.esenseial.at/api/v4/projects/153/packages/pypi/simple" --break-system-packages
+```
+
+### Raw Data file Location
+
+After triggering a measurement with the essence app the file is saved into this directory as JSON's:
+
+`Documents\measurement\raw_acceleration`
+

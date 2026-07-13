@@ -13,7 +13,7 @@ This makes it Incredibly clean and simple looking while still staying functional
 - Efficiency - Keyboard driven workflow
 - Wayland native - Built for Wayland -> better performance, security than older X11
 - Modern Customization - Things like blur, round edges
-- Massive community - Many pre-made designs (`dotfiles`)
+- Massive community - Many pre-made designs (`dotfiles`) [Dotfiles Github](https://github.com/topics/hyprland-dotfiles)
 
 ## Tiling vs Floating
 

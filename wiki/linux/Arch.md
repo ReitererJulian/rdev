@@ -50,3 +50,163 @@ This is why the installation is considered as an entry hurdle.
 
 >[!NOTE]
 > By now you can use the official `archinstall`-Script to simplify the process
+
+
+### Classic Install
+
+Setup documentation for a arch install without a desktop on a virtual machine without UEFI with ethernet:
+
+To install arch without the `archinstall`-Script you can select a keyboard layout to make your life a little easier:
+
+To see all available keyboard layouts:
+
+`localectl list-keymaps`
+
+To select a layout (For example German):
+
+`loadkeys de`
+
+#### Partitioning
+
+Identify your hard drive:
+
+`fdisk -l`
+
+- `dev/loop*` -> Arch ISO, ignored
+- `dev/sda` -> actual disk
+
+Partitioning using `fdisk /dev/sda`
+
+| Partition | Typ | Size |
+|---|---|---|
+| `/dev/sda1` | Linux swap (Hex `82`) | 4 GiB |
+| `/dev/sda2` | Linux (Standard `83`) | Rest of disk |
+
+Orders in fdisk:
+
+```
+n → p → 1 → Enter → +4G      (Swap-Partition)
+n → p → 2 → Enter → Enter    (Root-Partition, Rest of disk)
+t → 1 → 82                   (Set Swap-Typ)
+p                             (Control)
+w                             (write & exit)
+```
+
+
+#### Formatting & Mounting
+
+```bash
+mkswap /dev/sda1
+swapon /dev/sda1
+mkfs.ext4 /dev/sda2
+mount /dev/sda2 /mnt
+```
+
+#### Installing bases system
+
+To install the base system use pacstrap:
+
+```bash
+pacstrap -K /mnt base linux linux-firmware
+```
+
+If you need other things like `nano`, `vim` or other things you can install them nearly the same:
+
+```bash
+pacstrap -K /mnt nano vim networkmanager
+```
+
+> [!NOTE]
+> `nano` and `vim` are not included in the new version. `networkmanager` is needed to connect to the internet after the first reboot
+
+#### Generate fstab
+
+```bash
+genfstab -U /mnt >> /mnt/etc/fstab
+```
+
+Check:
+
+```bash
+cat /mnt/etc/fstab
+```
+
+#### Change to new system
+
+```bash
+arch-chroot /mnt
+```
+
+From that point on, all commands change things in the system not the ISO.
+
+#### Time Zone
+
+Setting time zone for `Europe/Vienna`
+
+```bash
+ln -sf /usr/share/zoneinfo/Europe/Vienna /etc/localtime
+hwclock --systohc
+```
+
+#### Locale
+
+`/etc/locale.gen` change (Remove comment `#` for):
+```
+en_US.UTF-8 UTF-8
+de_DE.UTF-8 UTF-8
+```
+
+After:
+
+```bash
+locale-gen
+echo "LANG=de_DE.UTF-8" > /etc/locale.conf
+```
+
+
+#### Hostname
+
+```bash
+echo "archvm" > /etc/hostname
+```
+Add to `/etc/hosts`:
+```
+127.0.0.1   localhost
+::1         localhost
+127.0.1.1   archvm
+```
+
+#### Root-Password
+
+```bash
+passwd
+```
+
+#### Bootloader
+
+```bash
+pacman -S grub
+grub-install --target=i386-pc /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+#### Enable services
+
+```bash
+systemctl enable NetworkManager
+```
+
+#### Cleanup and reboot
+
+
+```bash
+exit                # exit chroot
+umount -R /mnt      
+swapoff /dev/sda1
+reboot
+```
+
+> [!IMPORTANT]
+> Remove the Arch-ISO from the virtual disk drive while the VM is rebooting. (Devices -> Optical Drives -> Remove Disk) So it boots from the disk, not the ISO
+
+If everything was setup correctly you should see a login prompt `archvm login:` , log in with `root` + set password

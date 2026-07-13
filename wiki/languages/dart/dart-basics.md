@@ -147,6 +147,14 @@ Lets look into this code further:
 
 ---
 
+### User Input
+
+Reading a user input is possible through `stdin`
+
+```dart
+final userInput = stdin.readLineSync();
+```
+
 ## Nice to know:
 
 Some things that dart uses that are nice to know.

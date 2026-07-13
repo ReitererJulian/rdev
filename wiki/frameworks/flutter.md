@@ -77,7 +77,7 @@ The body can be further split down into a `Progress` section and a `Task` sectio
 
 Now lets think of how to layout these widgets using other widgets
 
-A so called `collumn` is used to arrange its children widgets vertically (Top to bottom) 
+A so called `column` is used to arrange its children widgets vertically (Top to bottom) 
 A so called `row` is used to arrange its children widgets horizontally (Left to right)
 
 Using this the layout becomes much easier.
@@ -86,7 +86,7 @@ Using this the layout becomes much easier.
 
  For example:
 
-`Collumn` -> `Text` and `Progress Bar`
+`Column` -> `Text` and `Progress Bar`
 `Rows` -> `Checkboxes` and `Tasks`
 
 ### Dart
@@ -98,5 +98,7 @@ This code imports the basic widgets and with `void main() => runApp()` we can se
 ```dart
 import 'package:flutter/material.dart';
 
-void main() => runApp(); // Root widget will be defined here 
+void main() => runApp(
+	Center(child: Text('Hello World')),
+	); // Root widget will be defined here 
 ```

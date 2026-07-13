@@ -8,6 +8,8 @@ Desk things like keyboards, lights, deco and other stuff
 
 - `Wobkey Rainy Pro 75%` [Keyboard](https://www.wobkey.com/products/wobkey-rainy-75-de-iso-mechanical-keyboard?variant=46846755569899) ~150€
 
+- `Wooting 80HE` 
+
 ### Mouse
 
 - New mouse glides `Pulsar Superglide 2` [Glides](https://www.amazon.de/-/en/Pulsar-Gaming-Gears-Superglide2-Superlight2/dp/B0CKXQ5R7S?crid=293XESWNJH4QV&dib=eyJ2IjoiMSJ9.be9qUSAyU4S6ny4lDLQWXpeSgBO5WePaxO5a5PZHeXq-YFq922Sr7qFOQNi_95rZocgigfUdvZHGswc2dujvSHwhgm0HxctHZsJDAQFTsvq81aZ6KLIwiqbSVVrK1Qqq2o0ogdpOeueHfAROXlUoKPsGqp-qTpMsS-EcK116e6-Ho--56XGaGatT0s_ueze8Wb99T5SEogKxDdPcNxLXOJIjKx5c0trDs5iTyyuxshI.07Rg9YDgk3a6xRNR-uhTRwgXU2j0Flt6TugOk4yCJOg&dib_tag=se&keywords=logitech%2Bg%2Bpro%2Bx%2Bsuperlight%2B2%2Bglides&qid=1782998823&sprefix=superlight%2Bglides%2Caps%2C112&sr=8-4&th=1) ~30€
@@ -19,7 +21,6 @@ Desk things like keyboards, lights, deco and other stuff
 Two possible options:
 
 - Using XLR Cable and combining it with an AMP for my headphones (More expensive)
-	- []
 - Using it with USB-C and using my headphones without an AMP (Cheaper)
 
 ## PC

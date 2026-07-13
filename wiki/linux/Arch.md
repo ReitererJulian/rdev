@@ -66,6 +66,8 @@ To select a layout (For example German):
 
 `loadkeys de`
 
+---
+
 #### Partitioning
 
 Identify your hard drive:
@@ -92,6 +94,7 @@ p                             (Control)
 w                             (write & exit)
 ```
 
+---
 
 #### Formatting & Mounting
 
@@ -101,6 +104,8 @@ swapon /dev/sda1
 mkfs.ext4 /dev/sda2
 mount /dev/sda2 /mnt
 ```
+
+---
 
 #### Installing bases system
 
@@ -119,6 +124,8 @@ pacstrap -K /mnt nano vim networkmanager
 > [!NOTE]
 > `nano` and `vim` are not included in the new version. `networkmanager` is needed to connect to the internet after the first reboot
 
+---
+
 #### Generate fstab
 
 ```bash
@@ -131,6 +138,8 @@ Check:
 cat /mnt/etc/fstab
 ```
 
+---
+
 #### Change to new system
 
 ```bash
@@ -138,6 +147,8 @@ arch-chroot /mnt
 ```
 
 From that point on, all commands change things in the system not the ISO.
+
+---
 
 #### Time Zone
 
@@ -148,13 +159,14 @@ ln -sf /usr/share/zoneinfo/Europe/Vienna /etc/localtime
 hwclock --systohc
 ```
 
+---
+
 #### Locale
 
-`/etc/locale.gen` change (Remove comment `#` for):
-```
-en_US.UTF-8 UTF-8
-de_DE.UTF-8 UTF-8
-```
+`/etc/locale.gen` 
+
+- If you want an English terminal remove the `#` for `en_US.UTF-8 UTF-8`
+- If you want an German terminal remove the `#` for `de_DE.UTF-8 UTF-8`
 
 After:
 
@@ -163,6 +175,7 @@ locale-gen
 echo "LANG=de_DE.UTF-8" > /etc/locale.conf
 ```
 
+---
 
 #### Hostname
 
@@ -176,11 +189,15 @@ Add to `/etc/hosts`:
 127.0.1.1   archvm
 ```
 
+---
+
 #### Root-Password
 
 ```bash
 passwd
 ```
+
+---
 
 #### Bootloader
 
@@ -190,14 +207,17 @@ grub-install --target=i386-pc /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+---
+
 #### Enable services
 
 ```bash
 systemctl enable NetworkManager
 ```
 
-#### Cleanup and reboot
+---
 
+#### Cleanup and reboot
 
 ```bash
 exit                # exit chroot

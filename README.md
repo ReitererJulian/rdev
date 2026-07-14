@@ -27,45 +27,80 @@
 
 ## Structure
 ```
-
-rdev/  
-├── README.md  
-│  
-├── systems/  
-│ ├── e3ds/  
-│ │ ├── README.md  
-│ │ └── hardware/  
-│ │ └── sensor.md  
-│ ├── home-setup/  
-│ │ ├── README.md  
-│ │ └── desk.md  
-│ └── pi-stack/  
-│ ├── README.md  
-│ ├── setup.md  
-│ └── scripts/  
-│ ├── stats.md  
-│ └── stress.md  
-│  
-└── wiki/  
-├── concepts/  
-│ ├── dto.md  
-│ └── rest-api.md  
-├── frameworks/  
-│ ├── fast-api.md  
-│ ├── flutter.md  
-│ └── spring-boot.md  
-├── languages/  
-│ ├── java/  
-│ └── python/  
-│ ├── async-vs-sync.md  
-│ └── python-basics.md  
-└── tools/  
-├── docker.md  
-├── git.md  
-├── kubernetes.md  
-├── postgreSQL.md  
-└── uvicorn.md
-
+rdev/
+|
+│   README.md
+│
+├───systems
+│   │   README.md
+│   │
+│   ├───e3ds
+│   │   │   README.md
+│   │   │
+│   │   └───hardware
+│   │           sensor-setup.md
+│   │           sensor.md
+│   │
+│   ├───home-setup
+│   │       desk.md
+│   │       README.md
+│   │
+│   └───pi-stack
+│       │   README.md
+│       │   setup.md
+│       │
+│       └───scripts
+│               stats.md
+│               stress.md
+│
+└───wiki
+    │   README.md
+    │
+    ├───concepts
+    │       dto.md
+    │       README.md
+    │       rest-api.md
+    │
+    ├───frameworks
+    │       fast-api.md
+    │       flutter.md
+    │       README.md
+    │       spring-boot.md
+    │
+    ├───languages
+    │   │   README.md
+    │   │
+    │   ├───dart
+    │   │       dart-basics.md
+    │   │
+    │   ├───java
+    │   │       cmd-assert.md
+    │   │       collections.md
+    │   │       design-patterns-behavioral.md
+    │   │       design-patterns-creational.md
+    │   │       design-patterns-structural.md
+    │   │       equals-hashcode-tostring.md
+    │   │       iteration-interfaces.md
+    │   │       maven.md
+    │   │       oop-basics.md
+    │   │       year-3.md
+    │   │
+    │   └───python
+    │           async-vs-sync.md
+    │           python-basics.md
+    │
+    ├───linux
+    │       arch.md
+    │       hyprland.md
+    │       README.md
+    │
+    └───tools
+            docker.md
+            git.md
+            kubernetes.md
+            postgreSQL.md
+            README.md
+            uvicorn.md
 ```
 
 ## Usage

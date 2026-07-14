@@ -8,7 +8,7 @@ Desk things like keyboards, lights, deco and other stuff
 
 - `Wobkey Rainy Pro 75%` [Keyboard](https://www.wobkey.com/products/wobkey-rainy-75-de-iso-mechanical-keyboard?variant=46846755569899) ~150€
 
-- `Wooting 80HE` 
+- `Wooting 80HE` ~330€
 
 ### Mouse
 
@@ -23,6 +23,10 @@ Two possible options:
 - Using XLR Cable and combining it with an AMP for my headphones (More expensive)
 - Using it with USB-C and using my headphones without an AMP (Cheaper)
 
+### USBC
+
+- Microphone: `RØDE NT-USB Mini`
+
 ## PC
 
 - Case: `be Quiet Ligh Base 900FX`
@@ -35,10 +39,13 @@ Two possible options:
 - AIO-Fans: `be quiet! Light Wings PWM, LED-Steuerung, 120mm`
 - Power-Supply: `be quiet! Pure Power 13 M 850W ATX 3.1`
 
-
 ## Monitor
 
 Minimal 240HZ 2k `WOLED` or `QDOLED`
+
+### QDOLED
+
+- Monitor: `Dell Alienware AW2725DF 26.7"`
 
 ### WOLED
 

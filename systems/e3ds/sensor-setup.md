@@ -36,25 +36,38 @@ If needed change the settings accordingly:
 For the stationary sensor:
 
 ```json 
-{
-	"frequency": 4500,
-	"sensitivity": 16,
-	"timespan": 2.0,
-	"continuousInterval": 10,
-	"continuousMeasurement": true,
-	"modbusEnabled": true,
-	"plotResults": true,
-	"debug": false 
-} 
+{  
+  "SES": {  
+    "Acceleration.Configuration.Frequency": 4500,  
+    "Acceleration.Configuration.Sensitivity": 16,  
+    "Acceleration.Configuration.Timespan": 2.0,  
+    "Acceleration.Control.ContinuousInterval": 10,  
+    "Acceleration.Control.ContinuousMeasurement": true,  
+    "Communication.Amqp.Enabled": true,  
+    "Visualization.Control.PlotResults": true  
+  }
+}
 ```
 
 ### SMS
 
 For the mobile sensor copy the same as for the stationary but toggle `continuousMeasuerement`:
 
-```text 
-continuousMeasurement = false
+```json
+{
+"SMS": {  
+    "Acceleration.Configuration.Frequency": 4500,  
+    "Acceleration.Configuration.Sensitivity": 16,  
+    "Acceleration.Configuration.Timespan": 2.0,  
+    "Acceleration.Control.ContinuousInterval": 10,  
+    "Acceleration.Control.ContinuousMeasurement": false,
+	"Communication.Amqp.Enabled": true,  
+	"Visualization.Control.PlotResults": true  
+	}
+}
+
 ```
+
 
 ## Bluetooth Test
 

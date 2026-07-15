@@ -1,23 +1,9 @@
 # Linux
 
-This section contains notes about Linux, its filesystem, shell, commands, distributions and desktop environments.
+Notes and documentation about Linux, including its fundamentals, distributions, and desktop environments.
 
-## Basics
+## Contents
 
-- Linux Basics
-- Filesystem
-- Permissions
-
-## Terminal
-
-- Common Commands
-- Shell
-- Package Managers
-
-## Distributions
-
-- Arch Linux
-
-## Desktop
-
-- Hyprland
+- [Linux Basics](./linux-basics.md) - Kernel, distributions, filesystem, permissions, and common terminal commands
+- [Arch Linux](./arch.md) - Arch Linux notes, setup, and configuration
+- [Hyprland](./hyprland.md) - Hyprland setup and configuration

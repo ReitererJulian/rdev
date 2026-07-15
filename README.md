@@ -35,11 +35,10 @@ rdev/
 │   │   README.md
 │   │
 │   ├───e3ds
-│   │   │   README.md
-│   │   │
-│   │   └───hardware
-│   │           sensor-setup.md
-│   │           sensor.md
+│   │      README.md
+|   |      sensor-setup.md
+│   │      sensor.md
+│   │
 │   │
 │   ├───home-setup
 │   │       desk.md

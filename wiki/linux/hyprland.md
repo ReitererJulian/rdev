@@ -5,7 +5,44 @@ It is highly customizable via text and uses tiling windows instead of floating w
 Everything can be changed and personalized like taskbar, terminal.
 This makes it Incredibly clean and simple looking while still staying functional.
 
-> You get a blank canvas that you can form how you want by using text
+> You get a blank canvas that you can form just by using text
+
+## Wayland vs X11
+
+Both are `Display-Server-Protocols` which are the base for how programs even draw windows and register inputs (Mouse, Keyboard). 
+Without such a protocol graphical interfaces would not exist, just a text based console like `TTY` (`Teletypewirter`)
+
+### X11
+
+`X11` was created 1984 and is older than most current operating systems.
+For decades it was the only standard for Linux.
+
+It is build upon a central `X-Server`, which manages everything (Rendering, Input, Compositing...) in different layers.
+This architecture is its weakness in the current time and it struggles to keep up with todays security and performance demand. The technology is simply to old to handle modern graphics cards and things like multi monitor setups. 
+
+
+### Wayland
+
+`Wayland` was developed to **replace** `X11`
+
+Its architecture is much simpler and straight forward. 
+It is not built upon layers like `X11` but the compositor (`Hyprland`) **is** the Display-Server itself. 
+
+Using that architecture many problems are fixed:
+
+- `Security` - Programs cant read inputs of other windows
+- `Performance` - Less overhead
+- `Clean Multi-Monitor handling`
+
+#### Why does X11 still exist?
+
+After all those years it would be time for `X11` to retire. 
+But why is it still present?
+
+Many older programs are not written for `Wayland` and therefor cant understand it. 
+There are ways to `translate` `X11` for `Wayland` by using packages like `xorg-xwayland`
+
+---
 
 ## Why use Hyprland?
 
@@ -37,7 +74,9 @@ How is `tiling` different:
 ## Configuration
 
 Here is where Hyprland shines.
-Everything is configured inside a single plain text file usually located at: `~/.config/hypr/hyprland.conf`
+Everything is configured inside of text file usually located at: `~/.config/hypr/hyprland.conf`
+
+Other config files for things like `hyprpaper` are in different locations 
 
 Changes take effect instantly after saving the file. No need to reboot or restart anything.
 
@@ -49,6 +88,8 @@ The configuration files is divided into a few categories:
 - Decoration: Opacity, active blur
 - Animations: Fine-tuning the speed and curves
 - Binds: Setting up keyboard shortcuts
+
+---
 
 ## Important Concepts
 

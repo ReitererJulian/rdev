@@ -239,9 +239,10 @@ After triggering a measurement with the essence app the file is saved into this 
 `Documents\measurement\raw_acceleration`
 
 
-### Sensor Testing
+### Sensor Error
 
-If `continous measurement` was turned on, while using a older version it might happen that the sensor has a crazy long queue that it just stacks new mesurement requests at the end
+If `continous measurement` was turned on, while using a older version it might happen that the sensor has a crazy long queue that it just stacks new measurement requests at the end
 
 > Constant blue light
 
+Fixed with updateing verision or restarting omega2

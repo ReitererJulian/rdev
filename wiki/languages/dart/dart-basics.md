@@ -98,7 +98,7 @@ person.greet();
 
 ---
 
-### Loops and ifs
+### Loops and If's
 
 Loops and Ifs are very much the same as in Java
 

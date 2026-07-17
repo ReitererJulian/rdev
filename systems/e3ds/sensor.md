@@ -241,8 +241,10 @@ After triggering a measurement with the essence app the file is saved into this 
 
 ### Sensor Error
 
-If `continous measurement` was turned on, while using a older version it might happen that the sensor has a crazy long queue that it just stacks new measurement requests at the end
+If **Continuous Measurement** was enabled on an older firmware version, the sensor may end up with an extremely long queue of measurements after a restart. This happens because the sensor's internal clock only synchronizes after boot, until then, it still thinks the old time is correct.
 
-> Constant blue light
+For example: if the sensor was turned off at `12:00` and turned back on at `14:00`, it will initially believe it's still `12:00`. After a few minutes, once the clock syncs, it realizes 2 hours have passed and tries to queue and run all measurements that were missed during that time.
 
-Fixed with updateing verision or restarting omega2
+Until this queue is empty it puts new measurement requests at the end, so the sensor becomes unresponsive.
+
+**Fixed** in version `1.0.13`, or can be worked around by restarting the Omega2.

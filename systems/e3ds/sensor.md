@@ -248,3 +248,18 @@ For example: if the sensor was turned off at `12:00` and turned back on at `14:0
 Until this queue is empty it puts new measurement requests at the end, so the sensor becomes unresponsive.
 
 **Fixed** in version `1.0.13`, or can be worked around by restarting the Omega2.
+
+
+### Testing
+
+-          SMS00000000a4cea30c 
+
+-          SMS000000005843f8af
+
+-          SMS000000005bea90ac
+
+First:
+
+All with 1.0.12
+
+

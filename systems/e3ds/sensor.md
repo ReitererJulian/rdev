@@ -229,7 +229,7 @@ pip install InvenSense9DOFBuffered==1.0.13.dev0+feat.pllclock127 --index-url "ht
 Command to install the older stable version without the updated clock
 
 ```bash
-pip install InvenSense9DOFBuffered==1.0.12.dev0+feat.pllclock127 --index-url "https://poly:REDACTED.01.0y153gksk@git.esenseial.at/api/v4/projects/153/packages/pypi/simple" --break-system-packages
+pip install InvenSense9DOFBuffered==1.0.12 --index-url "https://poly:REDACTED.01.0y153gksk@git.esenseial.at/api/v4/projects/153/packages/pypi/simple" --break-system-packages
 ```
 
 ### Raw Data file Location

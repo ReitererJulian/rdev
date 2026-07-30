@@ -9,4 +9,11 @@ Draw basic shapes (Circles, Squares, Lines...) till you can easily connect two d
 - Do it a lot
 - Don't continue if your lines are not great
 - Practice often and much
-- 
+
+
+## General Tips:
+
+- Finish it
+	- Even if it looks bad.
+
+> Don't wait for perfection, instead take imperfect action today

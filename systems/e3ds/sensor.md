@@ -213,25 +213,6 @@ sudo su
 
 From there, you can install or uninstall updates as required.
 
-### Update Commands
-
-#### Dev Version
-
-Install the dev version (1.0.13)
-This version has the updated clock
-
-```bash
-pip install InvenSense9DOFBuffered==1.0.13.dev0+feat.pllclock127 --index-url "https://poly:REDACTED.01.0y153gksk@git.esenseial.at/api/v4/projects/153/packages/pypi/simple" --break-system-packages
-```
-
-#### Stable
-
-Command to install the older stable version without the updated clock
-
-```bash
-pip install InvenSense9DOFBuffered==1.0.12 --index-url "https://poly:REDACTED.01.0y153gksk@git.esenseial.at/api/v4/projects/153/packages/pypi/simple" --break-system-packages
-```
-
 ### Raw Data file Location
 
 After triggering a measurement with the essence app the file is saved into this directory as JSON's:

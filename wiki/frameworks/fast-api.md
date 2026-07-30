@@ -2,7 +2,6 @@
 
 FastAPI is a simple way to build a modern REST APIs in Python
 
-
 ```python
 # main.py
 from fastapi import FastAPI

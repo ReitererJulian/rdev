@@ -1,4 +1,3 @@
-
 # DTO
 
 A `dto` or `Data Transfer Object` is a simple Object which only purpose is to transfer data.

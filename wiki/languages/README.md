@@ -253,3 +253,9 @@ This will be achieved by adding these things:
 ## Documentation
 
 - Restructure rdev Repository
+
+## TODO
+
+- Learn Flutter / Dart
+- Upgrade Essence Client (Typer)
+- 

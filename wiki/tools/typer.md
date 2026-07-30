@@ -32,3 +32,7 @@ app = typer.Typer()
 def ping(host: str):
 	print(f"Pinging: {host}")
 ```
+
+## Implementation with OOP
+
+To include Typer in OOP 

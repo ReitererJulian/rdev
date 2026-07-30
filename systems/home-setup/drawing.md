@@ -1,0 +1,12 @@
+# Drawing
+
+Notes to finally get better at drawing
+
+## Lines
+
+Draw basic shapes (Circles, Squares, Lines...) till you can easily connect two dots
+
+- Do it a lot
+- Don't continue if your lines are not great
+- Practice often and much
+- 

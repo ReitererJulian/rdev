@@ -17,3 +17,11 @@ Draw basic shapes (Circles, Squares, Lines...) till you can easily connect two d
 	- Even if it looks bad.
 
 > Don't wait for perfection, instead take imperfect action today
+
+### Practice
+
+- Lines
+- Shapes
+- 3D Objects
+	- Rotating them
+- Combining 3D Objects

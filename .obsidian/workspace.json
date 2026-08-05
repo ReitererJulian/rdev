@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "systems/home-setup/drawing.md",
+                "file": "systems/e3ds/sensor.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "drawing"
+              "title": "sensor"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Dateiexplorer"
@@ -185,12 +187,12 @@
   },
   "active": "4192711dafe7a78f",
   "lastOpenFiles": [
+    "systems/e3ds/README.md",
+    "systems/home-setup/desk.md",
+    "systems/home-setup/drawing.md",
     "systems/e3ds/sensor-setup.md",
     "systems/README.md",
-    "systems/e3ds/README.md",
     "systems/e3ds/sensor.md",
-    "systems/home-setup/desk.md",
-    "systems/home-setup/README.md",
-    "systems/home-setup/drawing.md"
+    "systems/home-setup/README.md"
   ]
 }

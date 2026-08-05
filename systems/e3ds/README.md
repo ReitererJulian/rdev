@@ -126,3 +126,19 @@ Integrate the existing script into a **multiprocessing** implementation.
 ## Notes for ChatGPT
 
 If you ask ChatGPT for Blender-related help, mention that you are using **Blender 5**, as some instructions differ from previous versions.
+
+
+### TODO
+
+Powerpoint about Testing Sensors
+Based upon the Docu PDF
+
+- Process documentation
+	- What could be automated
+- 
+
+Powerpoint about finishing Weather Station
+- Requierments
+- Planning
+	- Time...
+- 

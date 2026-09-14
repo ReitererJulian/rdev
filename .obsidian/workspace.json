@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "systems/e3ds/sensor.md",
+                "file": "wiki/languages/dart/dart-basics.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "sensor"
+              "title": "dart-basics"
             }
           }
         ]
@@ -187,12 +187,13 @@
   },
   "active": "4192711dafe7a78f",
   "lastOpenFiles": [
+    "wiki/linux/arch.md",
+    "systems/e3ds/sensor.md",
+    "systems/e3ds/sensor-setup.md",
     "systems/e3ds/README.md",
     "systems/home-setup/desk.md",
     "systems/home-setup/drawing.md",
-    "systems/e3ds/sensor-setup.md",
     "systems/README.md",
-    "systems/e3ds/sensor.md",
     "systems/home-setup/README.md"
   ]
 }

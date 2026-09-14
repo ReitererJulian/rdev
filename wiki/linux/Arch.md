@@ -31,11 +31,11 @@ Important commands are:
 
 | *Command* | *Meaning* | 
 |-------------|------------|
-|`pacman -S package|Install package|
-|`pacman -R package|Remove package|
-|`pacman -Syu|Update system|
+|`pacman -S package`|Install package|
+|`pacman -R package`|Remove package|
+|`pacman -Syu`|Update system|
 |`pacman -Ss <package>`| Search Package|
-|`pacman -Q|List installed packages| 
+|`pacman -Q`|List installed packages| 
 
 ## AUR (Arch User Repository)
 

@@ -1,4 +1,4 @@
-nm # Sensor Setup
+# Sensor Setup
 
 ## Overview
 

@@ -1,6 +1,6 @@
 # Linux
 
-Notes and documentation about Linux, including its fundamentals, distributions, and desktop environments.
+Notes and documentation about Linux, including its fundamentals, distributions, and desktop environments like Hyprland.
 
 ## Contents
 

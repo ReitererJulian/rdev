@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/languages/dart/dart-basics.md",
+                "file": "wiki/linux/README.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "dart-basics"
+              "title": "README"
             }
           }
         ]
@@ -187,7 +187,12 @@
   },
   "active": "4192711dafe7a78f",
   "lastOpenFiles": [
+    "wiki/linux/linux-basics.md",
+    "wiki/linux/hyprland.md",
     "wiki/linux/arch.md",
+    "wiki/linux/README.md",
+    "README.md",
+    "wiki/languages/dart/dart-basics.md",
     "systems/e3ds/sensor.md",
     "systems/e3ds/sensor-setup.md",
     "systems/e3ds/README.md",

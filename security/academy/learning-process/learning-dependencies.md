@@ -36,3 +36,14 @@ However, first of all, we have to fail. It is an `unavoidable` and `essential` p
 >[!IMPORTANT]
 > Experience is built on failures.
 
+## Active Learning
+
+Going through the modules just by reading, we will learn only about `10%`
+
+> We can imagine when we learn theory in driving school. We learn a lot about car and traffic rules. We can learn as much as we want, but as soon as we get into the car for the first time, we will realize that all of this knowledge has still not taught us _how_ to drive a car.
+
+To stay motivated you need to recognize success. Looking back and seeing how far we have come will keep us motivated.
+
+## Will
+
+Will is the effort to perform a certain action or achieve a specific goal.

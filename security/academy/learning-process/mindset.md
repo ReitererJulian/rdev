@@ -13,6 +13,20 @@ We will notice there are generally two types of people:
 
 No one wants to spend so much time on just one area. Also, if we can obtain a deep understanding of a single programming language, we will learn others much faster.
 
+It is in these situations that our excuses come up, like:
+
+- I cannot do this
+- This is not for me
+- I do not understand this
+- etc.
+
+The only thing we have to do is to add the word "yet."
+
+- I cannot do this "yet."
+- This is not for me "yet."
+- I do not understand this "yet."
+- etc.
+
 ---
 
 ## Learning how to learn

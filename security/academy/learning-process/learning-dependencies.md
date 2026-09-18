@@ -1,5 +1,8 @@
 # Way of learning
 
+>[!IMPORTANT]
+>Decide on the goal defined in detail that you really want to achieve from your heart, and that will make you happy
+
 ## Know your goal
 
 Another essential part that makes you successful is that you `know your goal`. Imagine the following scenario:
@@ -47,3 +50,18 @@ To stay motivated you need to recognize success. Looking back and seeing how far
 ## Will
 
 Will is the effort to perform a certain action or achieve a specific goal.
+
+## Organization
+
+> An **inexperienced** woodcutter takes 30 minutes to sharpen his axe and 3 hours to cut down the tree. 
+>The **experienced** one will sharpen the axe for 3 hours and cut down the tree within 30 minutes.
+
+## Attention
+
+So when we talk about concentration, we mean the maintenance of our attention on a specific topic. This means that as long as we are interested in a given topic, we keep working on it until we have achieved the desired result.
+
+## Fear
+
+Fear in non-life-threatening situations lies in the thoughts of the 'imaginary' future. Failure is essential to learning and unavoidable. No one has ever acquired a skill without making a single mistake
+
+> The difference between a winner and a loser is that the winner has lost more often than the loser

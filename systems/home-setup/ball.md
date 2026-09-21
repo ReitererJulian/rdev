@@ -1,5 +1,26 @@
 # Maturaball
 
+## Sowftware
+
+- Geteilter Kalender
+	- Gruppiert nach Aufgaben (Zb Zeitung)
+	- Jeder kann alles sehen
+- ToDo und Meilenstein Plan
+- Errinerungen erstellen (Mobile Push benachrichtigung / email / desktop errinerung)
+	- 30 Minuten vor Terminen
+- Termine planen / verwalten
+- Interne Umfragen
+- Mitglieder Übersicht
+	- Rollen, Termine, Verantwortungen, Kontaktinformationen einsehen
+- Wochenansicht
+	- Startseite Termine für diese Woche sehen
+- Status anzeige
+	- Grün Verfügbar, Rot beschäftigt
+- Termine exportietn
+	- ICS Datein
+- 
+
+
 ## Ball
 
 ---

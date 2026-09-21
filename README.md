@@ -122,7 +122,3 @@ This repo isn't a runnable project — it's a documentation/notes repository. Br
 
 **Author:**
 - [Reiterer Julian](https://github.com/ReitererJulian)
-
-
-
-

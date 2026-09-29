@@ -34,10 +34,35 @@ Ports are virtual points where network connections begin and end.
 
 Each port is assigned a number, and many are standardized across all network-connected devices. For example, `HTTP` messages (website traffic) typically go to port `80`, while `HTTPS` messages go to port `443`.
 
+|Port(s)|Protocol|
+|---|---|
+|`20`/`21` (TCP)|`FTP`|
+|`22` (TCP)|`SSH`|
+|`23` (TCP)|`Telnet`|
+|`25` (TCP)|`SMTP`|
+|`80` (TCP)|`HTTP`|
+|`161` (TCP/UDP)|`SNMP`|
+|`389` (TCP/UDP)|`LDAP`|
+|`443` (TCP)|`SSL`/`TLS` (`HTTPS`)|
+|`445` (TCP)|`SMB`|
+|`3389` (TCP)|`RDP`|
+
 ### TCP
 
 `TCP` is connection-oriented, meaning that a connection between a client and a server must be established before data can be sent
 
 ### UDP
 
+`UDP` utilizes a connectionless communication model. There is no "handshake" and therefore introduces a certain amount of unreliability since there is no guarantee of data delivery.
 
+### Risk, Vulnerability, Weakness
+
+> In essence, a risk represents the potential for damage, a threat is what can cause that damage, and a vulnerability is the weakness that allows the threat to cause damage.
+
+### Service
+
+A service is an application running on a computer that performs some useful function for other users or computers. These special machines are called "servers".
+
+Computers are assigned an IP address, which allows them to be uniquely identified and accessible on a network. The services running on these computers may be assigned a port number to make the service accessible.
+
+To access a service remotely, we need to connect using the correct IP address and port number and use a language that the service understands. Manually examining all of the 65,535 ports for any available services would be laborious, and so tools have been created to automate this process and scan the range of ports for us. One of the most commonly used scanning tools is Nmap(Network Mapper).
